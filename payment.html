@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./stylesheets/all.css">
+
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white ">
+        <div class="container">
+            <a class="navbar-brand text-dark " href="#"><i class="bi bi-record-fill text-primary "></i>Vtuber出道工作室</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="./index.html" aria-current="page">首頁</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">服務介紹</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="./Q&A.html">常見問題</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="btn btn-primary active" href="./payment.html">立即訂閱</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5" style="background-image:url(./images/bg_paper.png);">
+        <div class=" text-center ">
+            <h4 class=" text-primary fw-bold mt-4">Vtuber出道工作室</h3>
+                <h2 class="fw-bold mb-4">方案選擇</h2>
+        </div>
+    </section>
+
+    <section class="py-5 container">
+        <div class="row justify-content-center ">
+            <div class="col-lg-8">
+                <form action="" class="p-lg-5 shadow-lg">
+                    <h3 class="deco-line mb-3">選擇方案</h3>
+                    <div class="row row-cols-1 row-cols-lg-3 pb-5 g-3">
+                        <div class="col">
+                            <!-- <button type="radio" class="btn btn-outline-primary w-100 btn-lg text-dark py-2 shadow-sm ">
+                                小小搭懶蟲<br class="d-none d-lg-block">
+                                NT 298/月
+                            </button> -->
+                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                            <label class="btn btn-outline-primary w-100 btn-lg text-dark py-2 shadow-sm" for="option1">
+                                輕鬆做到好<br class="d-none d-lg-block">
+                                NT 2,888/月
+                            </label>
+                        </div>
+                        <div class="col">
+                            <!-- <button type="radio" class="btn btn-outline-primary w-100 btn-lg text-dark py-2 shadow-sm">
+                                睡一整天囉<br class="d-none d-lg-block">
+                                NT 666/月
+                            </button> -->
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                            <label class="btn btn-outline-primary w-100 btn-lg text-dark py-2 shadow-sm" for="option2">
+                                睡醒自然好<br class="d-none d-lg-block">
+                                NT 5,888/月
+                            </label>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 btn-lg text-dark py-2 btn-special active">
+                                客製化方案<br class="d-none d-lg-block">
+                                客服詢價
+                            </button>
+                        </div>
+                    </div>
+                    <h3 class="deco-line mb-3">資料填寫</h3>
+                    <div class="mb-3">
+                        <div class="row gx-2 gy-3 row-cols-1  row-cols-lg-2 ">
+                            <div class="col-lg-6">
+                                <label for="firstName" class="form-label">姓氏</label>
+                                <input type="text" name="firstName" id="firstName" class="form-control"
+                                    placeholder="" />
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="lastName" class="form-label">名字</label>
+                                <input type="text" name="lastName" id="lastName" class="form-control" placeholder="" />
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="phoneNumber" class="form-label">手機號碼</label>
+                                <input type="tel" name="phoneNumber" id="phoneNumber" class="form-control"
+                                    placeholder="" />
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="email" class="form-label">電子郵件</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="" />
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="address" class="form-label">住址</label>
+                                <input type="text" name="address" id="address" class="form-control" placeholder="" />
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="connection-time" class="form-label">方便聯繫時間</label>
+                                <select class="form-select " name="connection-time" id="connection-time">
+                                    <option value="">09:00 ~ 12:00</option>
+                                    <option value="">13:00 ~ 16:00</option>
+                                    <option value="">16:00 ~ 19:00</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="" class="form-label">加購服務</label>
+                                <div class="d-flex flex-wrap ">
+                                    <div class="form-check pe-3">
+                                        <input class="form-check-input" type="checkbox" value="services1"
+                                            id="services1" />
+                                        <label class="form-check-label" for="services1">
+                                            每月多剪輯五支影片<span class="ps-1 text-primary fw-bold ">+500</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check pe-3">
+                                        <input class="form-check-input" type="checkbox" value="services2"
+                                            id="services2" />
+                                        <label class="form-check-label" for="services2">
+                                            24小時救援<span class="ps-1 text-primary fw-bold ">+800</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check pe-3">
+                                        <input class="form-check-input" type="checkbox" value="services3"
+                                            id="services3" />
+                                        <label class="form-check-label" for="services3">
+                                            協助企劃<span class="ps-1 text-primary fw-bold ">+1000</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="content" class="form-label">備註說明</label>
+                                <textarea class="form-control" name="content" id="content" rows="3"></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-primary w-100">
+                                    確定方案
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class=" text-center bg-light pb-5">
+            <div class="container d-flex flex-column align-items-center ">
+                <h2 class=" fw-bold pt-5 pb-3 ">需要其它協助嗎？</h2>
+                <div class="row row-cols-1 row-cols-lg-3 gy-3 gx-4 w-75">
+                    <div class="col">
+                        <div class="card border-0 shadow-lg py-2">
+                            <div class="card-body">
+                                <a target="_blank" href="tel:+8867555666"
+                                    class=" text-decoration-none text-dark stretched-link ">
+                                    <i class="pe-2 text-primary bi bi-telephone-fill "></i>07-555-666
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 shadow-lg py-2">
+                            <div class="card-body">
+                                <a target="_blank" href="http://fb.me"
+                                    class=" text-decoration-none text-dark stretched-link ">
+                                    <i class="pe-2 text-primary bi bi-facebook"></i>Vtuber出道工作室
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0 shadow-lg py-2">
+                            <div class="card-body">
+                                <a target="_blank" href="#" class=" text-decoration-none text-dark stretched-link ">
+                                    <i class="pe-2 text-primary bi bi-question-circle"></i>常見問題
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-3" style="background-color: #6C757D;">
+            <p class="mb-0 text-center text-white">Copyright © 2024 Vtuber出道工作室.<br class="d-block d-lg-none">All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
